@@ -1,12 +1,46 @@
-# React + Vite
+# 🌐 Mini Blog Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the **frontend** of the Mini Blog Post Manager built using:
 
-Currently, two official plugins are available:
+-  React
+-  Redux Toolkit
+-  React Router
+-  TailwindCSS + Shadcn UI
+-  Vite
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+It connects to a REST API backend to manage blog posts with **create**, **read**, **update**, and **delete (CRUD)** operations.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📁 Folder Structure
+
+- ├── components/         # Reusable UI components (Shadcn/ui)
+- ├── pages/              # Route-based pages
+- ├── redux/              # Redux Toolkit slice
+- ├── App.jsx             # Main app component
+- ├── main.jsx            # Entry point
+
+---
+
+## 🚦 Routes
+
+- /Home-----> Displays-----> public blog post listing
+- /posts/:id-----> PostDetail-----> Shows details of a single blog post
+- /admin-----> Admin-----> Admin panel for creating, editing, deleting posts
+
+---
+
+
+## 📷 Screenshots
+
+- Home
+  
+![Home Page Screenshot](./src/assets/Home.png)
+
+- Post Details
+  
+![Post Details Page Screenshot](./src/assets/PostDetails.png)
+
+- Admin
+  
+![Admin Page Screenshot](./src/assets/Admin.png)
